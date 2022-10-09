@@ -1,0 +1,114 @@
+.offer-section {
+  position: relative;
+  padding-top: 45px;
+}
+.offer-section .row {
+  display: flex;
+  margin-right: -15px;
+  margin-left: -15px;
+  flex-wrap: wrap;
+}
+.offer-section .row .col {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+@media (min-width: 768px) {
+  .offer-section .row .col {
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+}
+.offer-section .row .box {
+  display: flex;
+  align-items: center;
+  margin-top: 45px;
+  border-radius: 5px;
+  padding: 20px 15px;
+  background-color: #222831;
+  color: #ffffff;
+}
+@media (max-width: 992px) {
+  .offer-section .row .box {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+@media (max-width: 767px) {
+  .offer-section .row .box {
+    flex-direction: row;
+    text-align: left;
+  }
+}
+@media (max-width: 440px) {
+  .offer-section .row .box {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.offer-section .row .box .img-box {
+  width: 175px;
+  height: 175px;
+  border: 5px solid #ffbe33;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  margin-right: 15px;
+}
+.offer-section .row .box .img-box img {
+  width: 100%;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+}
+.offer-section .row .box:hover .img-box img {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+.offer-section .details-box h5,
+.offer-section .details-box h6 {
+  font-family: "Dancing Script", cursive;
+}
+.offer-section .details-box h5 {
+  font-size: 24px;
+}
+.offer-section .details-box h6 {
+  font-size: 16px;
+  margin: 10px 0;
+}
+.offer-section .details-box h6 span {
+  font-size: 40px;
+  font-weight: bold;
+}
+.offer-section .details-box a {
+  background-color: #ffbe33;
+  display: inline-block;
+  border: none;
+  border-radius: 45px;
+  -webkit-border-radius: 45px;
+  -moz-border-radius: 45px;
+  -ms-border-radius: 45px;
+  -o-border-radius: 45px;
+  padding: 10px 30px;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  color: #fff;
+}
+.offer-section .details-box a:hover {
+  background-color: #e69c00;
+}
+.offer-section .details-box a i {
+  margin-left: 5px;
+}
